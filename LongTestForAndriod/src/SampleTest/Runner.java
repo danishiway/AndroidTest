@@ -39,10 +39,11 @@ public class Runner {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability("pCloudy_Username", "danish.faraz@sstsinc.com");
 		capabilities.setCapability("pCloudy_ApiKey", "hhpg97q6k483pdxj3df3hg8h");
-		capabilities.setCapability("pCloudy_DurationInMinutes", 15);
+		capabilities.setCapability("pCloudy_DurationInMinutes", 20);
 		capabilities.setCapability("newCommandTimeout", 600);
 		capabilities.setCapability("launchTimeout", 90000);
-		capabilities.setCapability("pCloudy_DeviceFullName", "GOOGLE_Pixel4a_Android_12.0.0_494e5");
+		capabilities.setCapability("pCloudy_DeviceManufacturer", "GOOGLE");
+		capabilities.setCapability("pCloudy_DeviceVersion", "12.0.0");
 		capabilities.setCapability("platformVersion", "12.0.0");
 		capabilities.setCapability("platformName", "Android");
 		capabilities.setCapability("automationName", "uiautomator2");
@@ -50,30 +51,15 @@ public class Runner {
 		capabilities.setCapability("appPackage", "com.pcloudy.appiumdemo");
 		capabilities.setCapability("appActivity", "com.ba.mobile.LaunchActivity");
 		capabilities.setCapability("pCloudy_WildNet", "false");
-		capabilities.setCapability("pCloudy_EnableVideo", "true");
-		capabilities.setCapability("pCloudy_EnablePerformanceData", "true");
+		capabilities.setCapability("pCloudy_EnableVideo", "false");
+		capabilities.setCapability("pCloudy_EnablePerformanceData", "false");
 		capabilities.setCapability("pCloudy_EnableDeviceLogs", "true");
-		 driver = new AndroidDriver<WebElement>(new URL("https://device.pcloudy.com/appiumcloud/wd/hub"), capabilities);
+	 driver = new AndroidDriver<WebElement>(new URL("https://device.pcloudy.com/appiumcloud/wd/hub"), capabilities);
 		System.out.println("Driver initialize");
 	
 	}
 
-	@Test
-	public void Test() throws IOException, InterruptedException {
 
-	    //Click on Accept button
-        driver.findElement(By.xpath("//android.widget.Button[@resource-id='com.pcloudy.appiumdemo:id/accept']")).click();
-        captureScreenShots();
-        
-        //Click on Flight button
-        driver.findElement(By.xpath("//android.widget.Button[@resource-id='com.pcloudy.appiumdemo:id/flightButton']")).click();
-        captureScreenShots();
-    
-        //Select from location
-        
-        
-        driver.quit();
-	}
 
 	@Test 
 	public void Test1() throws IOException, InterruptedException {
