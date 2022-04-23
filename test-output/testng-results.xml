@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="46348" started-at="2022-04-23T14:42:09 IST" finished-at="2022-04-23T14:42:55 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="46348" started-at="2022-04-23T14:42:09 IST" finished-at="2022-04-23T14:42:55 IST">
+      <class name="SampleTest.Runner">
+        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:SampleTest.Runner@a38d7a3]" name="setUpSuite" is-config="true" duration-ms="15" started-at="2022-04-23T14:42:09 IST" finished-at="2022-04-23T14:42:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSuite -->
+        <test-method status="PASS" signature="prepareTest()[pri:0, instance:SampleTest.Runner@a38d7a3]" name="prepareTest" is-config="true" duration-ms="33156" started-at="2022-04-23T14:42:09 IST" finished-at="2022-04-23T14:42:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareTest -->
+        <test-method status="PASS" signature="Test1()[pri:0, instance:SampleTest.Runner@a38d7a3]" name="Test1" duration-ms="12753" started-at="2022-04-23T14:42:42 IST" finished-at="2022-04-23T14:42:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test1 -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:SampleTest.Runner@a38d7a3]" name="endTest" is-config="true" duration-ms="368" started-at="2022-04-23T14:42:55 IST" finished-at="2022-04-23T14:42:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- SampleTest.Runner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
